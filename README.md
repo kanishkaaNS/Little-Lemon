@@ -58,17 +58,19 @@ Follow these steps to run the project locally:
 ### 1. Install dependencies
 ```bash
 npm install
-
+```
 ###2. Start the development server
+```bash
 npm start
-
-The application will run locally at
+```
+###3.The application will run locally at
+```bash
 http://localhost:3000
-
----
+```
 
 ## 📌 Notes
 
 - This project is a front-end React application created for educational purposes.
 - HashRouter is used to handle client-side routing without server configuration.
 - No backend or database is included.
+

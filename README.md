@@ -59,11 +59,11 @@ Follow these steps to run the project locally:
 ```bash
 npm install
 ```
-###2. Start the development server
+### 2. Start the development server
 ```bash
 npm start
 ```
-###3.The application will run locally at
+### 3.The application will run locally at
 ```bash
 http://localhost:3000
 ```

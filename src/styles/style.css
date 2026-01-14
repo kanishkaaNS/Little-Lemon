@@ -1,0 +1,321 @@
+:root {
+  --green: #495e57;
+  --yellow: #f4ce14;
+  --light-gray: #edefee;
+  --dark-gray: #333333;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+  color: var(--yellow);
+}
+
+/* Use this class for section headings */
+.section-title {
+  color: var(--yellow);
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: var(--dark-gray);
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: var(--light-gray);
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  border: none;
+  outline: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--green);
+  color: white;
+}
+
+.hero h1 {
+  color: var(--yellow);
+  margin-bottom: 8px;
+}
+
+.hero button {
+  background-color: var(--yellow);
+  border: none;
+  padding: 12px 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  opacity: 0.9;
+}
+
+/* ---------- PLACEHOLDERS ---------- */
+.image-placeholder {
+  width: 220px;
+  height: 160px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+/* ---------- SPECIALS ---------- */
+.specials {
+  padding: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: var(--light-gray);
+  padding: 16px;
+  border-radius: 12px;
+  width: 220px;
+}
+
+/* ---------- BOOKING ---------- */
+.booking {
+  padding: 40px;
+}
+
+.booking h1 {
+  color: var(--green);
+}
+
+form {
+  display: grid;
+  max-width: 400px;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+input,
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: var(--yellow);
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ---------- BOOKING PAGE ---------- */
+.booking-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.booking-card {
+  background: var(--green);
+  padding: 32px 36px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* keep headings highlighted but clean */
+.booking-card h1 {
+  margin-bottom: 10px;
+}
+
+/* form spacing inside card */
+.booking-card form {
+  margin-top: 20px;
+}
+
+.booking-card label {
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+/* ---------- MODAL ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background: var(--green);
+  padding: 30px;
+  border-radius: 16px;
+  width: 350px;
+  color: white;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-card p {
+  margin: 10px 0 20px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.modal-actions button {
+  flex: 1;
+  background: var(--yellow);
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-card input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.switch-text {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.switch-text span {
+  color: var(--yellow);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-section {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+.menu-item {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.menu-item h3 {
+  margin-bottom: 6px;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--green);
+}
+
+/* ---------- NAV LINKS ---------- */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* remove default visited styling */
+.nav-link:visited {
+  color: black;
+}
+
+/* hover effect */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* active page feel (optional, subtle) */
+.nav-link:active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.menu-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.menu-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.menu-content {
+  flex: 1;
+}
